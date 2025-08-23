@@ -1,0 +1,209 @@
+DWM Key Bindings Analysis
+=========================
+
+MODKEY = Super/Windows key (Mod4Mask)
+
+CURRENTLY USED KEYS (Core DWM Functionality):
+=============================================
+
+Numbers (1-9):
+- MODKEY + 1-9         : Switch to workspace/tag 1-9
+- MODKEY + Shift + 1-9 : Move current window to workspace/tag 1-9
+- MODKEY + Ctrl + 1-9  : Toggle view of workspace/tag 1-9 
+- MODKEY + Ctrl + Shift + 1-9 : Toggle current window on workspace/tag 1-9
+
+- MODKEY + 0           : View all workspaces
+- MODKEY + Shift + 0   : Make current window visible on all workspaces
+
+Letters (alphabetical):
+- MODKEY + a           : Toggle gaps on/off
+- MODKEY + Shift + a   : Reset gaps to default
+
+- MODKEY + f           : Toggle fullscreen
+- MODKEY + Shift + f   : Set floating layout
+
+- MODKEY + g           : Shift view to previous workspace
+- MODKEY + Shift + g   : Move window to previous workspace
+
+- MODKEY + h           : Decrease master area size
+- MODKEY + i           : Set centeredmaster layout
+- MODKEY + Shift + i   : Set centeredfloatingmaster layout
+
+- MODKEY + j           : Focus next window in stack (STACKKEYS)
+- MODKEY + Shift + j   : Move window down in stack (STACKKEYS)
+
+- MODKEY + k           : Focus previous window in stack (STACKKEYS)
+- MODKEY + Shift + k   : Move window up in stack (STACKKEYS)
+
+- MODKEY + l           : Increase master area size
+
+- MODKEY + m           : Focus previous monitor
+- MODKEY + Shift + m   : Move window to previous monitor
+
+- MODKEY + o           : Increase number of master windows
+- MODKEY + Shift + o   : Decrease number of master windows
+
+- MODKEY + q           : Kill current window
+
+- MODKEY + Shift + s   : Toggle sticky (show on all workspaces)
+
+- MODKEY + t           : Set tile layout (default)
+- MODKEY + Shift + t   : Set bstack layout (master on top)
+
+- MODKEY + u           : Set deck layout
+- MODKEY + Shift + u   : Set monocle layout
+
+- MODKEY + v           : Focus master window (STACKKEYS)
+
+- MODKEY + x           : Decrease gaps
+- MODKEY + Shift + y   : Set dwindle layout (fibonacci)
+- MODKEY + z           : Increase gaps
+
+Special Keys:
+- MODKEY + Tab         : Switch to last viewed workspace
+- MODKEY + Space       : Zoom/swap current window with master
+- MODKEY + Shift + Space : Toggle floating for current window
+- MODKEY + ;           : Shift view to next workspace  
+- MODKEY + Shift + ;   : Move window to next workspace
+- MODKEY + Shift + '   : Toggle smart gaps
+- MODKEY + \           : Switch to last viewed workspace
+- MODKEY + F5          : Reload Xresources
+
+Arrow Keys:
+- MODKEY + Left        : Focus previous monitor
+- MODKEY + Shift + Left: Move window to previous monitor
+- MODKEY + Right       : Focus next monitor
+- MODKEY + Shift + Right: Move window to next monitor
+
+Page Keys:
+- MODKEY + Page_Up     : Shift view to previous workspace
+- MODKEY + Shift + Page_Up : Move window to previous workspace
+- MODKEY + Page_Down   : Shift view to next workspace
+- MODKEY + Shift + Page_Down : Move window to next workspace
+
+
+NOW FREE KEYS (Available for new bindings):
+===========================================
+
+Letters:
+- MODKEY + b           : AVAILABLE (was bookmark manager)
+- MODKEY + Shift + b   : AVAILABLE (was bookmark this)
+
+- MODKEY + c           : AVAILABLE (was profanity chat)
+- MODKEY + Shift + c   : AVAILABLE
+
+- MODKEY + d           : AVAILABLE (was dmenu_run)
+- MODKEY + Shift + d   : AVAILABLE (was passmenu)
+
+- MODKEY + e           : AVAILABLE (was neomutt)
+- MODKEY + Shift + e   : AVAILABLE (was abook)
+
+- MODKEY + n           : AVAILABLE (was nfc_dmenu)
+- MODKEY + Shift + n   : AVAILABLE (was newsboat)
+
+- MODKEY + p           : AVAILABLE (was mpc toggle)
+- MODKEY + Shift + p   : AVAILABLE (was mpc pause)
+
+- MODKEY + r           : AVAILABLE (was file manager)
+- MODKEY + Shift + r   : AVAILABLE (was htop)
+
+- MODKEY + s           : AVAILABLE (was ytlocal)
+
+- MODKEY + w           : AVAILABLE (was browser)
+- MODKEY + Shift + w   : AVAILABLE (was nmtui)
+
+- MODKEY + y           : AVAILABLE (was spiral layout, commented out)
+
+Special Characters:
+- MODKEY + `           : AVAILABLE (was dmenuunicode)
+- MODKEY + Shift + `   : AVAILABLE
+
+- MODKEY + -           : AVAILABLE (was volume down)
+- MODKEY + Shift + -   : AVAILABLE (was volume down more)
+
+- MODKEY + =           : AVAILABLE (was volume up) 
+- MODKEY + Shift + =   : AVAILABLE (was volume up more)
+
+- MODKEY + BackSpace   : AVAILABLE (was sysact)
+- MODKEY + Shift + BackSpace : AVAILABLE (was sysact)
+
+- MODKEY + Return      : AVAILABLE (was terminal)
+- MODKEY + Shift + Return : AVAILABLE (was scratchpad terminal)
+
+- MODKEY + [           : AVAILABLE (was mpc seek backward)
+- MODKEY + Shift + [   : AVAILABLE (was mpc seek backward more)
+
+- MODKEY + ]           : AVAILABLE (was mpc seek forward)
+- MODKEY + Shift + ]   : AVAILABLE (was mpc seek forward more)
+
+- MODKEY + '           : AVAILABLE (was scratchpad calculator)
+
+- MODKEY + ,           : AVAILABLE (was mpc prev)
+- MODKEY + Shift + ,   : AVAILABLE (was mpc seek 0%)
+
+- MODKEY + .           : AVAILABLE (was mpc next)
+- MODKEY + Shift + .   : AVAILABLE (was mpc repeat)
+
+Function Keys:
+- MODKEY + F1          : AVAILABLE (was manual)
+- MODKEY + F2          : AVAILABLE (was tutorial videos)
+- MODKEY + F3          : AVAILABLE (was display select)
+- MODKEY + F4          : AVAILABLE (was pulsemixer)
+- MODKEY + F6          : AVAILABLE (was torwrap)
+- MODKEY + F7          : AVAILABLE (was td-toggle)
+- MODKEY + F8          : AVAILABLE (was mailsync)
+- MODKEY + F9          : AVAILABLE (was mounter)
+- MODKEY + F10         : AVAILABLE (was unmounter)
+- MODKEY + F11         : AVAILABLE (was webcam)
+- MODKEY + F12         : AVAILABLE (was remaps)
+
+Other Keys:
+- MODKEY + Insert      : AVAILABLE (was snippets)
+- MODKEY + Delete      : AVAILABLE (was kill recording)
+- MODKEY + Scroll_Lock : AVAILABLE (was screenkey)
+
+Print Screen:
+- Print                : AVAILABLE (was full screenshot)
+- Shift + Print        : AVAILABLE (was selection screenshot)
+- MODKEY + Print       : AVAILABLE (was screen recording)
+- MODKEY + Shift + Print : AVAILABLE (was kill recording)
+
+Media Keys (all available):
+- XF86AudioMute        : AVAILABLE
+- XF86AudioRaiseVolume : AVAILABLE
+- XF86AudioLowerVolume : AVAILABLE
+- XF86AudioPrev        : AVAILABLE
+- XF86AudioNext        : AVAILABLE
+- XF86AudioPause       : AVAILABLE
+- XF86AudioPlay        : AVAILABLE
+- XF86AudioStop        : AVAILABLE
+- XF86AudioRewind      : AVAILABLE
+- XF86AudioForward     : AVAILABLE
+- XF86AudioMedia       : AVAILABLE
+- XF86AudioMicMute     : AVAILABLE
+- XF86Calculator       : AVAILABLE
+- XF86Sleep            : AVAILABLE
+- XF86WWW              : AVAILABLE
+- XF86DOS              : AVAILABLE
+- XF86ScreenSaver      : AVAILABLE
+- XF86TaskPane         : AVAILABLE
+- XF86Mail             : AVAILABLE
+- XF86MyComputer       : AVAILABLE
+- XF86Launch1          : AVAILABLE
+- XF86TouchpadToggle   : AVAILABLE
+- XF86TouchpadOff      : AVAILABLE
+- XF86TouchpadOn       : AVAILABLE
+- XF86MonBrightnessUp  : AVAILABLE
+- XF86MonBrightnessDown: AVAILABLE
+
+
+SUMMARY:
+========
+- Total keys that were freed up: ~50+ key combinations
+- All external program launches have been removed
+- Only core dwm window management functions remain
+- Plenty of keys available for custom bindings or applications
+
+Note: MODKEY is typically the Super/Windows key (Mod4Mask).
+The TAGKEYS macro creates 4 bindings per number (1-9), totaling 36 workspace-related bindings.
+STACKKEYS macro creates 3 bindings for j, k, v for window focus/movement.
