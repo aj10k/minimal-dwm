@@ -264,7 +264,6 @@ static void sigdwmblocks(const Arg *arg);
 #endif
 static void sighup(int unused);
 static void sigterm(int unused);
-static void spawn(const Arg *arg);
 static int stackpos(const Arg *arg);
 static void tag(const Arg *arg);
 static void tagmon(const Arg *arg);
@@ -1057,7 +1056,11 @@ getdwmblockspid()
 {
 	char buf[16];
 	FILE *fp = popen("pidof -s dwmblocks", "r");
-	fgets(buf, sizeof(buf), fp);
+	if (fgets(buf, sizeof(buf), fp) == NULL) {
+		pclose(fp);
+		dwmblockspid = 0;
+		return -1;
+	}
 	pid_t pid = strtoul(buf, NULL, 10);
 	pclose(fp);
 	dwmblockspid = pid;
@@ -1663,7 +1666,8 @@ run(void)
 
 void
 runAutostart(void) {
-	system("killall -q dwmblocks; dwmblocks &");
+	int ret = system("killall -q dwmblocks; dwmblocks &");
+	(void)ret; /* explicitly ignore return value */
 }
 
 void
@@ -1988,18 +1992,6 @@ sigchld(int unused)
 	if (signal(SIGCHLD, sigchld) == SIG_ERR)
 		die("can't install SIGCHLD handler:");
 	while (0 < waitpid(-1, NULL, WNOHANG));
-}
-
-void
-spawn(const Arg *arg)
-{
-	if (fork() == 0) {
-		if (dpy)
-			close(ConnectionNumber(dpy));
-		setsid();
-		execvp(((char **)arg->v)[0], (char **)arg->v);
-		die("dwm: execvp '%s' failed:", ((char **)arg->v)[0]);
-	}
 }
 
 void
