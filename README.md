@@ -10,9 +10,12 @@ This project includes a `shell.nix` file with all required dependencies:
 nix-shell --run "make clean && make"
 ```
 
+## Testing ipc-dwm
+- basic test: `./dwm-msg subscribe tag_change_event`
+- more: `./dwm-msg help`
+
 ## Key Bindings
 See [keybindings.md](keybindings.md) for a complete list.
-
 
 ## Project Structure
 
@@ -40,3 +43,5 @@ Patches integrated:
 - [swallow](https://dwm.suckless.org/patches/swallow/)
 - [xresources](https://dwm.suckless.org/patches/xresources/)
 - [smart gaps](https://dwm.suckless.org/patches/smartgaps/)
+- [ipc](https://dwm.suckless.org/patches/ipc/)
+

@@ -30,6 +30,9 @@ pkgs.mkShell {
     xorg.xcbutilimage
     xorg.xcbutilkeysyms
     xorg.xcbutilrenderutil
+    
+    # JSON library for patches
+    yajl
   ];
   
   shellHook = ''
